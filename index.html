@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet Sharma</title>
+    <link rel="icon" type="image/png" href="Documents\favicon.png">
+
+    <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (saved === 'dark' || (!saved && prefersDark)) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+
+            <a href="#top" class="logo">navneet sharma</a>
+
+            <div class="header-right">
+
+                <nav id="site-nav">
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                    <a href="Documents\NavneetResume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link" title="Open Resume">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>Resume</span>
+                    </a>
+                </nav>
+
+                <div class="header-controls">
+                    <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main id="top">
+
+        <img src="Documents\pmy.png" alt="Navneet Sharma" class="profile">
+
+        <h2>Navneet Sharma</h2>
+
+        <p>Research Intern at IIT Guwahati | Ex. Business Analyst at Physics Wallah</p>
+
+        <p>
+            I build intelligent systems using machine learning, computer vision,
+            nlp & gen-ai. Currently conducting research in multimodal emotion recognition while bringing industry
+            experience from my Business Analyst internship to create data-driven solutions.
+        </p>
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/navneetsharmame/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/Navneet0094" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+
+            <a href="https://x.com/navnneeet" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="https://www.instagram.com/navnneet.sharma/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.youtube.com/@navneet_sharma001" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <span>2K followers</span>
+            </div>
+
+            <div>
+                <i class="fab fa-github"></i>
+                <span>30+ repositories</span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section id="activity">
+        <h2>ACTIVITY</h2>
+        <p>
+            GitHub contributions over the last year.
+        </p>
+
+        <div class="calendar"></div>
+
+    </section>
+
+    <section class="research" id="experience">
+        <div class="section-head">
+            <p class="eyebrow mono">Experience</p>
+            <h2>Where I've worked</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="t-row">
+                <div class="t-when mono">Mar 2026 — Ongoing</div>
+                <div class="t-content">
+                    <h3>Research Intern — Facial Emotion Recognition</h3>
+                    <p class="t-org mono">IIT Guwahati</p>
+                    <ul>
+                        <li>Comparative analysis of handcrafted vs. deep-learning feature extraction for FER across
+                            JAFFE, CK+, FER2013 and KDEF datasets.</li>
+                        <li>Implemented HOG, LBP and SIFT features with SVM classifiers, achieving strong comparative
+                            results across datasets.</li>
+                        <li>Built hybrid feature-fusion pipelines using pretrained VGG16 and MobileNet to push
+                            classification accuracy further.</li>
+                        <li>Comparing which part of face is more important and contributing more in facial emotion
+                            detection.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="t-row">
+                <div class="t-when mono">Oct 2024 — Mar 2025</div>
+                <div class="t-content">
+                    <h3>Trainee Business Analyst</h3>
+                    <p class="t-org mono">Physics Wallah</p>
+                    <ul>
+                        <li>Tracked the full inventory lifecycle — inbound/outbound, stock levels, assignment, returns
+                            and defects — with accurate ownership at every stage.</li>
+                        <li>Maintained the CEO's expenditure and asset-allocation tracker for periodic review and
+                            accountability.</li>
+                        <li>Standardized tracker structures and added validation checks, cutting manual errors and
+                            speeding up stakeholder reporting.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-head" style="margin-top: clamp(64px, 10vw, 120px);">
+            <p class="eyebrow mono">Education</p>
+            <h2>Academic record</h2>
+        </div>
+
+        <div class="edu-table">
+            <div class="edu-row edu-head mono">
+                <span>Year</span><span>Credential</span><span>Institute</span><span>Score</span>
+            </div>
+            <div class="edu-row">
+                <span class="mono">2023 — Present</span><span>B.Sc. Hons.</span><span>IIT Guwahati</span><span>7.95
+                    CGPA</span>
+            </div>
+            <div class="edu-row">
+                <span class="mono">2023</span><span>Senior Secondary</span><span>HBSE Board</span><span>84.0%</span>
+            </div>
+            <div class="edu-row">
+                <span class="mono">2020</span><span>Secondary</span><span>HBSE Board</span><span>94.6%</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+
+        <div class="section-head">
+            <p class="eyebrow mono">Skills</p>
+            <h2>Technologies I Work With</h2>
+        </div>
+
+        <div class="skill-container">
+
+            <div class="skill-category">
+                <h3>Programming & Web</h3>
+
+                <div class="skill-list">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Numpy</span>
+                    <span>Model Evaluation</span>
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>SQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flask</span>
+                    <span>Streamlit</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Data Analytics and Visualisation</h3>
+
+                <div class="skill-list">
+                    <span>MySQL</span>
+                    <span>Excel</span>
+                    <span>EDA</span>
+                    <span>Feature engineering</span>
+                    <span>Power BI</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>Extract Transform Load(ETl)</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science & Maths</h3>
+
+                <div class="skill-list">
+                    <span>Machine learning</span>
+                    <span>Deep learning</span>
+                    <span>NLP</span>
+                    <span>Computer Vision</span>
+                    <span>Scikit-Learn</span>
+                    <span>TensorFlow</span>
+                    <span>OpenCV</span>
+                    <span>Classification</span>
+                    <span>Regression</span>
+                    <span>Statistics</span>
+                    <span>Linear Alzebra</span>
+                    <span>Signal Processing</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Generative-Ai</h3>
+
+                <div class="skill-list">
+                    <span>LLM basics</span>
+                    <span>Rag</span>
+                    <span>Prompt engineering</span>
+                    <span>Fine tuning</span>
+                    <span>Vector database</span>
+                    <span>Currently learning.......</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Developer Tools</h3>
+
+                <div class="skill-list">
+                    <span>Linux</span>
+                    <span>Vercel</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>Jupyter</span>
+                    <span>Kaggle</span>
+                    <span>Docker basics</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other Interests & Hobbies</h3>
+
+                <div class="skill-list">
+                    <span>Dashboard making</span>
+                    <span>AI Curiosity</span>
+                    <span>Travelling</span>
+                    <span>Repairing Stuff</span>
+                    <span>Negotiating & Communicating</span>
+                    <span>Farming & Gardening</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <div class="section-head">
+            <p class="eyebrow mono">Projects</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- project 1 -->
+            <div class="project-card wide">
+                <h3>SVM-Based Hybrid Feature Fusion for Emotion Recognition</h3>
+                <div class="project-image-slider">
+                    <div class="slider-track">
+                        <img src="Dashboards/Svm.png" alt="Svm based facial analysis" class="slide active">
+                    </div>
+                </div>
+                <div class="project-card-body">
+
+                    <p>
+                        Developed a hybrid facial emotion recognition pipeline combining HOG with
+                        pretrained VGG16 and MobileNet features. Applied SVM-based feature fusion and
+                        evaluated on JAFFE and CK+ using standard metrics.
+                    </p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>CNN</span>
+                        <span>OpenCV</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Navneet0094/Facial-Emotion-recognition-Notebooks/blob/main/Jafee_SVM_aware_weighted_fusion_updated.ipynb"
+                            target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card wide">
+                <h3>Region-Based Facial Analysis for Emotion Recognition</h3>
+                <div class="project-image-slider">
+                    <div class="slider-track">
+                        <img src="Dashboards/Region.png" alt="Region based facial analysis" class="slide active">
+                    </div>
+                </div>
+
+                <div class="project-card-body">
+
+                    <p>
+                        Developed region-based facial emotion recognition using HOG features and
+                        SVM on upper and lower facial regions. Evaluated performance across JAFFE,
+                        CK+, FER2013, and KDEF using standard classification metrics.
+                    </p>
+
+                    <div class="tech">
+                        <span>Feature Extraction</span>
+                        <span>Classification</span>
+                        <span>SVM</span>
+                        <span>OpenCV</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Navneet0094/Multimodal-emotion-detection/blob/main/Kdef_FER2013_different_fau.ipynb"
+                            target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3-->
+            <div class="project-card wide">
+                <h3>Content-Based Movie Recommendation System</h3>
+                <div class="project-image-slider">
+                    <div class="slider-track">
+                        <img src="Dashboards/recomm.png" alt="Movie Recommendation System" class="slide active">
+                    </div>
+                </div>
+
+                <div class="project-card-body">
+
+                    <p>Built a content-based movie recommendation system using text vectorization and cosine
+                        similarity to recommend Top-5 similar movies.
+                        Developed an interactive Streamlit application for movie search and recommendations.
+                    </p>
+                    <div class="tech">
+                        <span>NLP</span>
+                        <span>Cosine Similarity</span>
+                        <span>Streamlit</span>
+                        <span>Text Vectorization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Navneet0094/Movie_recommendation" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card wide">
+                <h3>Kalistee — 24-Hour D2C Brand Hackathon Project</h3>
+                <div class="project-image-slider">
+
+                    <div class="slider-track">
+                        <img src="Dashboards/kalistee1.png" alt="Kalistee brand website preview" class="slide active">
+                        <img src="Dashboards/kalistee2.png" alt="Kalistee product page preview" class="slide">
+                        <img src="Dashboards/kalistee3.png" alt="Kalistee chatbot preview" class="slide">
+                    </div>
+                    <button class="slider-arrow slider-arrow-prev" aria-label="Previous image">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow slider-arrow-next" aria-label="Next image">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="project-card-body">
+
+                    <p>Created a D2C brand from scratch within 24 hours. Developed the brand identity, name, product
+                        concept,
+                        and website design as a team.
+                        Built an e-commerce website for showcasing/selling the products.
+                        Integrated an AI chatbot using Chatbase for customer interaction/support.
+                    </p>
+                    <div class="tech">
+                        <span>Team Collaboration</span>
+                        <span>D2C Branding</span>
+                        <span>AI Chatbot</span>
+                        <span>Web Dev</span>
+                        <span>E-commerce</span>
+                        <span>Product Strategy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://kalistee.vercel.app" target="_blank" rel="noopener noreferrer">Website ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card wide">
+                <h3>Road Accident Analysis Dashboard</h3>
+                <div class="project-image-slider">
+                    <div class="slider-track">
+                        <img src="Dashboards/Power1.png" alt="Road accident dashboard - overview" class="slide active">
+                        <img src="Dashboards/Power2.png" alt="Road accident dashboard - KPI view" class="slide">
+                    </div>
+                    <button class="slider-arrow slider-arrow-prev" aria-label="Previous image">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow slider-arrow-next" aria-label="Next image">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="project-card-body">
+
+                    <p>Built an interactive Road Accident Analysis Dashboard in Power BI, analyzing severity,
+                        casualties, and accident trends.
+                        Used DAX, KPIs, and interactive visualizations to identify key patterns.
+                    </p>
+                    <div class="tech">
+                        <span>Power BI</span>
+                        <span>Data Analysis</span>
+                        <span>Data visulisation</span>
+                        <span>Power Query</span>
+                        <span>Excel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Navneet0094/Dashnoards/blob/main/IIscPowerBiReport.pbix"
+                            target="_blank" rel="noopener noreferrer">GitHub(Download) ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- project 6 -->
+            <div class="project-card wide">
+                <h3>E-Commerce Sales Analysis Dashboard</h3>
+                <div class="project-image-slider">
+                    <div class="slider-track">
+                        <img src="Dashboards/Excel1.png" alt="Ecommerce dashboard - sales and profit analysis" class="slide active">
+                        <img src="Dashboards/Excel2.png" alt="Ecommerce dashboard - KPI and YoY growth overview" class="slide">
+                    </div>
+                    <button class="slider-arrow slider-arrow-prev" aria-label="Previous image">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow slider-arrow-next" aria-label="Next image">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="project-card-body">
+
+                    <p>Built an interactive E-commerce Sales Dashboard using PivotTables, PivotCharts, and KPI
+                        analysis.
+                        Analyzed sales, profit, quantity, profit margin, YoY growth to identify key business trends.
+                    </p>
+                    <div class="tech">
+                        <span>Advanced Excel</span>
+                        <span>Pivot Tables</span>
+                        <span>KPI</span>
+                        <span>Data analysis</span>
+                        <span>Data visualisation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Navneet0094/Dashnoards/blob/main/Ecommerce%20Sales%20Analysis%20(version%201)%20(Recovered).xlsx"
+                            target="_blank" rel="noopener noreferrer">GitHub(Download) ↗</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="achievements" id="achievements">
+
+        <div class="section-head">
+            <p class="eyebrow mono">Achievements</p>
+            <h2>Things I'm Proud Of</h2>
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="achievement-slider">
+
+                <div class="achievement-track">
+
+                    <!-- Achievement 1 -->
+                    <div class="achievement-slide active">
+                        <img src="Achivements/HakathonKalistee.jpg" alt="Hackathon Achievement">
+
+                        <div class="achievement-info">
+                            <h3>Hackathon Winner</h3>
+                            <p>
+                                Won a 24-hour D2C brand-building hackathon
+                                with the Kalistee project.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Achievement 2 -->
+                    <div class="achievement-slide">
+                        <img src="Achivements/Trylitics.jpg" alt="Data analysis hackathon achievement">
+
+                        <div class="achievement-info">
+                            <h3>3rd Runner-up in a data analysis hackathon</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- Achievement 3 -->
+                    <div class="achievement-slide">
+                        <img src="Achivements/Kabaddi.jpg" alt="Achievement">
+
+                        <div class="achievement-info">
+                            <h3>Achievement Title</h3>
+                            <p>
+                                Add a short description of your achievement here.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="achievement-slide">
+                        <img src="Achivements/Trophy.png" alt="Academic Achievement">
+
+                        <div class="achievement-info">
+                            <h3>Academic Achievement</h3>
+                            <p>
+                                Topped my school in Class 10 with 94.6%.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Arrows -->
+                <button class="achievement-arrow achievement-prev" id="achievement-prev" aria-label="Previous achievement">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="achievement-arrow achievement-next" id="achievement-next" aria-label="Next achievement">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots -->
+                <div class="achievement-dots">
+                    <span class="achievement-dot active"></span>
+                    <span class="achievement-dot"></span>
+                    <span class="achievement-dot"></span>
+                    <span class="achievement-dot"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-direct">
+
+            <h2>Prefer a Quick Chat?</h2>
+
+            <p>
+                Have an internship opportunity, project idea, or just want to say hello?
+            </p>
+
+            <div class="contact-buttons">
+
+                <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=s.navneet@op.iitg.ac.in" target="_blank"
+                    rel="noopener noreferrer" class="contact-btn email-btn">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Email Me Directly</span>
+
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/navneetsharmame/" target="_blank" rel="noopener noreferrer"
+                    class="contact-btn linkedin-btn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>Connect on LinkedIn</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="lightbox-arrow lightbox-arrow-prev" id="lightbox-arrow-prev" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="lightbox-track" id="lightbox-track"></div>
+        <button class="lightbox-arrow lightbox-arrow-next" id="lightbox-arrow-next" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-dots" id="lightbox-dots"></div>
+    </div>
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
