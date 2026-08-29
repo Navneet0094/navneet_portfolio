@@ -1245,7 +1245,12 @@ p {
     }
 }
 
-main p {
+/* main p {
     font-size: 17px;
+    line-height: 1.6;
+} */
+
+main p {
+    font-size: 10px !important;
     line-height: 1.6;
 }
