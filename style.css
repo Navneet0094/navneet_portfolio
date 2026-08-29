@@ -204,8 +204,8 @@ main {
 }
 
 .profile {
-    width: 185px;
-    height: 185px;
+    width: 125px;
+    height: 125px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -236,12 +236,12 @@ p {
 .socials {
     display: flex;
     gap: 24px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .socials a {
     color: var(--text-muted);
-    font-size: 34px;
+    font-size: 20px;
     transition: .25s;
 }
 
@@ -252,7 +252,7 @@ p {
 /* ================= STATS ================= */
 
 .stats {
-    margin-top: 35px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -1251,6 +1251,7 @@ p {
 } */
 
 main p {
-    font-size: 10px !important;
+    font-size: 17px;
     line-height: 1.6;
+    max-width: 1000px;
 }
