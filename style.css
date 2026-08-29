@@ -1244,3 +1244,8 @@ p {
         right: 14px;
     }
 }
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
